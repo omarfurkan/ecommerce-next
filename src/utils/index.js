@@ -40,6 +40,45 @@ export const adminNavOptions = [
 ];
 
 
-export const styles = {
-    button: "mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white"
-}
+
+
+export const registraionFormControls = [
+    {
+        id: 'name',
+        type: 'text',
+        plaaceholder: 'Enter you name',
+        label: 'Name',
+        componentType: 'input'
+    },
+    {
+        id: 'email',
+        type: 'email',
+        plaaceholder: 'Enter you email',
+        label: 'Email',
+        componentType: 'input'
+    },
+    {
+        id: 'password',
+        type: 'password',
+        plaaceholder: 'Enter you password',
+        label: 'Password',
+        componentType: 'input'
+    },
+    {
+        id: ' role',
+        type: '',
+        plaaceholder: '',
+        label: 'Role',
+        componentType: 'select',
+        options: [
+            {
+                id: 'admin',
+                label: 'Admin'
+            },
+            {
+                id: 'customer',
+                label: 'customer'
+            },
+        ]
+    },
+]
